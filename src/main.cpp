@@ -101,15 +101,8 @@ int main()
 {
 	// Testing with random matrix
 
-	Eigen::Matrix3d R1;
-	R1 << 0.3, 0.5, 0.7,
-		0.1, 0.9, 0.4,
-		0.3, 0.6, 0.1;
-
-	Eigen::Matrix3d R2;
-	R2 << 0.8, 0.1, 0.2,
-		0.1, 0.4, 0.3,
-		0.5, 0.5, 0.2;
+	Eigen::MatrixXd R1 = Eigen::MatrixXd::Random(4, 3);
+	Eigen::MatrixXd R2 = Eigen::MatrixXd::Random(4, 3);
 
 	std::cout << R1 << std::endl;
 	std::cout << "\n" << R2 << std::endl;
